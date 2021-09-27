@@ -19,5 +19,12 @@ import {
 const API = {
 
 
-    
+    fetchMovies: async (page) => {
+
+        const endpoint = `${POPULAR_BASE_URL}&page=${page}`;
+        return await (await fetch(endpoint)).json();
+    },
+
 }
+
+export default API;
