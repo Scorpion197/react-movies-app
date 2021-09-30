@@ -3,11 +3,11 @@ import React from 'react';
 import Header from '../Header/Header';
 
 
-const Movie = ({ movieId }) => (
+const Movie = () => (
 
     <>
         <Header />
-        <h3> { movieId }</h3>
+        <h3> HEY movie</h3>
     </>
 
 )

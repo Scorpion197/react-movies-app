@@ -17,7 +17,7 @@ function App() {
       </Route>
 
       <Route exact path='/:movieId'>
-        <Movie movieId='30' />
+        <Movie/>
       </Route>
       <GlobalStyle />
     </Router>
