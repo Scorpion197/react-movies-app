@@ -8,5 +8,11 @@ export const Image = styled.img`
     object-fit: cover; 
     border-radius: 20px;
     cursor: pointer;
+    
+
+    :hover {
+        
+        transform: scale(1.1);
+    }
 `;
 
