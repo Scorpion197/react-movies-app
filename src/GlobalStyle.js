@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     h1 {
       font-size: 2rem;
       font-weight: 600;
-      color: var(--white);
+      color: var(--darkGrey);
     }
 
     h3 {
