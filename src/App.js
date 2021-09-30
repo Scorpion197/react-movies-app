@@ -5,6 +5,8 @@ import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
 // components 
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
+import Movie from './components/Movie/Movie';
+
 function App() {
   return (
 
@@ -14,6 +16,9 @@ function App() {
         <Home />
       </Route>
 
+      <Route exact path='/:movieId'>
+        <Movie movieId='30' />
+      </Route>
       <GlobalStyle />
     </Router>
   );
