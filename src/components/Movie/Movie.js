@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom';
 import Header from '../Header/Header';
 import Head from './Head/Head';
 import HeroImage from '../HeroImage/Hero';
+import MovieInfo from '../MovieInfo/MovieInfo';
 
 //hooks 
 import { useMovieFetch } from '../../Hooks/useMovieFetch';
@@ -17,7 +18,6 @@ const Movie = () => {
     const { movieId } = useParams();
     const {state: movie, loading, error} = useMovieFetch(movieId);
 
-    console.log(movie);    
 
     return (
 
@@ -26,9 +26,8 @@ const Movie = () => {
             <Head movieTitle={movie.title}/>
                  
 
+            <MovieInfo movie={movie} />
 
-
-            <h3> HEY movie</h3>
         </>
     )
 

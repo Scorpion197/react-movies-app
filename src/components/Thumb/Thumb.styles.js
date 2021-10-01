@@ -12,7 +12,7 @@ export const Image = styled.img`
 
     :hover {
         
-        transform: scale(1.1);
+        opacity: 0.8;
     }
 `;
 
