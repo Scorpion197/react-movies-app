@@ -2,8 +2,10 @@ import React from 'react';
 
 //config 
 import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL } from '../../config';
-//Components
+//hooks
 import { useHomeFetch } from '../../Hooks/useHomeFetch';
+//Components
+
 import HeroImage from '../HeroImage/Hero';
 import Header from '../Header/Header';
 import Grid from '../Grid/Grid';
@@ -13,7 +15,6 @@ import SearchBar from '../Searchbar/SearchBar';
 const Home = () => {
 
     const {loading, error, state} = useHomeFetch();
-
     return (
 
         <>
